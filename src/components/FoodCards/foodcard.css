@@ -1,0 +1,7 @@
+.container__foodcards{
+    background-image: url(./../../assets/img/shot.svg);
+    background-color: rgb(238, 238, 238);
+    background-size: cover;
+    width: 100vw;
+    background-position: center;
+}

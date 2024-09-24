@@ -1,0 +1,8 @@
+.banner2{
+    background-image: url(./../../assets/img/image.webp);
+    width: 100vw;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+
+}
