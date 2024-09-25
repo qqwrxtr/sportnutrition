@@ -16,20 +16,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     
-    <!-- Taboola Pixel Code -->
-<script type='text/javascript'>
-  window._tfa = window._tfa || [];
-  window._tfa.push({notify: 'event', name: 'page_view', id: 1752413});
-  !function (t, f, a, x) {
-         if (!document.getElementById(x)) {
-            t.async = 1;t.src = a;t.id=x;f.parentNode.insertBefore(t, f);
-         }
-  }(document.createElement('script'),
-  document.getElementsByTagName('script')[0],
-  '//cdn.taboola.com/libtrc/unip/1752413/tfa.js',
-  'tb_tfa_script');
-</script>
-<!-- End of Taboola Pixel Code -->
+    <script data-obct type = "text/javascript">
+      / DO NOT MODIFY THIS CODE/
+      !function(_window, _document) {
+        var OB_ADV_ID = '003599bb13b6965fb797c0e0b5ba9a84e3';
+        if (_window.obApi) {
+          var toArray = function(object) {
+            return Object.prototype.toString.call(object) === '[object Array]' ? object : [object];
+          };
+          _window.obApi.marketerId = toArray(_window.obApi.marketerId).concat(toArray(OB_ADV_ID));
+          return;
+        }
+        var api = _window.obApi = function() {
+          api.dispatch ? api.dispatch.apply(api, arguments) : api.queue.push(arguments);
+        };
+        api.version = '1.1';
+        api.loaded = true;
+        api.marketerId = OB_ADV_ID;
+        api.queue = [];
+        var tag = _document.createElement('script');
+        tag.async = true;
+        tag.src = '//amplify.outbrain.com/cp/obtp.js';
+        tag.type = 'text/javascript';
+        var script = _document.getElementsByTagName('script')[0];
+        script.parentNode.insertBefore(tag, script);
+      }(window, document);
+    
+      obApi('track', 'PAGE_VIEW');
+    </script>
     
     <title>Nutrition and Sport</title>
   </head>
