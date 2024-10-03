@@ -2,6 +2,7 @@ import './App.css';
 import Banner from './components/Banner/Banner';
 import BannerSovet from './components/BannerSovet/BannerSovet';
 import DisclaimerPopup from './components/Disclaimer/Disclaimer';
+import Disclaimer from './components/Disclaimer_Bottom/Disclaimer_Bottom';
 import EatingWell from './components/EatingWell/EatingWell';
 import Exercise from './components/Excercise/Exercise';
 import Fat from './components/Fat/Fat';
@@ -23,6 +24,7 @@ function App() {
           <Banner/>
         </header>
         <main className='flex flex-col justify-center items-center'>
+          <Disclaimer/>
           <DisclaimerPopup/>
           <EatingWell/>
           <QueuteBanner/>
